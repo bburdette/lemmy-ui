@@ -1,7 +1,7 @@
 lockfileVersion: '6.0'
 
 settings:
-  autoInstallPeers: true
+  autoInstallPeers: false
   excludeLinksFromLockfile: false
 
 dependencies:
@@ -43,7 +43,7 @@ dependencies:
     version: 6.7.1(@babel/core@7.23.9)
   bootstrap:
     specifier: ^5.3.3
-    version: 5.3.3(@popperjs/core@2.11.8)
+    version: 5.3.3
   check-password-strength:
     specifier: ^2.0.7
     version: 2.0.7
@@ -100,7 +100,7 @@ dependencies:
     version: 0.0.2
   inferno-router:
     specifier: ^8.2.3
-    version: 8.2.3(history@5.3.0)(path-to-regexp-es6@1.7.0)
+    version: 8.2.3(history@5.3.0)
   inferno-server:
     specifier: ^8.2.3
     version: 8.2.3
@@ -146,6 +146,12 @@ dependencies:
   mini-css-extract-plugin:
     specifier: ^2.8.0
     version: 2.8.0(webpack@5.90.3)
+  pmpm:
+    specifier: ^0.0.0
+    version: 0.0.0
+  pnpm:
+    specifier: ^7.33.7
+    version: 7.33.7
   register-service-worker:
     specifier: ^1.7.2
     version: 1.7.2
@@ -2506,10 +2512,8 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  /ajv-formats@2.1.1(ajv@8.12.0):
+  /ajv-formats@2.1.1:
     resolution: {integrity: sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==}
-    peerDependencies:
-      ajv: ^8.0.0
     peerDependenciesMeta:
       ajv:
         optional: true
@@ -2870,12 +2874,10 @@ packages:
       fast-deep-equal: 3.1.3
       multicast-dns: 7.2.5
 
-  /bootstrap@5.3.3(@popperjs/core@2.11.8):
+  /bootstrap@5.3.3:
     resolution: {integrity: sha512-8HLCdWgyoMguSO9o+aH+iuZ+aht+mzW0u3HIMzVu7Srrpv7EBBxTnrFlSCskwdY1+EOFQSm7uMJhNQHkdPcmjg==}
     peerDependencies:
       '@popperjs/core': ^2.11.8
-    dependencies:
-      '@popperjs/core': 2.11.8
     dev: false
 
   /brace-expansion@1.1.11:
@@ -4625,11 +4627,10 @@ packages:
       inferno-vnode-flags: 8.2.3
     dev: false
 
-  /inferno-router@8.2.3(history@5.3.0)(path-to-regexp-es6@1.7.0):
+  /inferno-router@8.2.3(history@5.3.0):
     resolution: {integrity: sha512-1AWsV8k/XKttlGFJkCAkVdMLe69zAbH12rMhl6uxVy8W2rD8okYsM/M7KUzbYqO1KnDfnXE5zV5XqanTotp6Cg==}
     peerDependencies:
       history: ^5.3.0
-      path-to-regexp-es6: 1.7.0
     dependencies:
       history: 5.3.0
       hoist-non-inferno-statics: 1.1.3
@@ -6030,6 +6031,16 @@ packages:
       find-up: 6.3.0
     dev: false
 
+  /pmpm@0.0.0:
+    resolution: {integrity: sha512-8v0jmAeT/h6RC0OkD5reS9TMq5o8f5RPSXwThwRxAuckd/z6uoAoNT5h695ne4wbaM/zJIvEK3I/N8GcLwBZGg==}
+    dev: false
+
+  /pnpm@7.33.7:
+    resolution: {integrity: sha512-ev4kEGQrOcaY30baTOXHIxpczjYGmNafjPj0IlfUCz5D8jEFOwe43oSf1P+/SnH/V7g1E3d3o1I4jz09p0cgDg==}
+    engines: {node: '>=14.6'}
+    hasBin: true
+    dev: false
+
   /possible-typed-array-names@1.0.0:
     resolution: {integrity: sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==}
     engines: {node: '>= 0.4'}
@@ -6569,7 +6580,7 @@ packages:
     dependencies:
       '@types/json-schema': 7.0.15
       ajv: 8.12.0
-      ajv-formats: 2.1.1(ajv@8.12.0)
+      ajv-formats: 2.1.1
       ajv-keywords: 5.1.0(ajv@8.12.0)
 
   /selderee@0.11.0:
